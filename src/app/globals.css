@@ -63,15 +63,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 6%;
+  padding: 16px 6%;
+  min-height: 92px;
   background: rgba(248, 246, 242, 0.95);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(216, 200, 184, 0.3);
-  transition: padding 0.3s;
+  transition: padding 0.3s, min-height 0.3s;
 }
 
 nav.nav-scrolled {
-  padding: 12px 6%;
+  padding: 10px 6%;
+  min-height: 76px;
+}
+
+nav.nav-scrolled .nav-logo-img {
+  height: 58px;
 }
 
 .nav-logo {
@@ -83,8 +89,10 @@ nav.nav-scrolled {
 
 .nav-logo-img {
   display: block;
-  width: 120px;
-  height: auto;
+  width: auto;
+  height: 72px;
+  max-width: 140px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -423,8 +431,10 @@ footer {
 
 .footer-logo-img {
   display: block;
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 110px;
+  max-width: 160px;
+  object-fit: contain;
 }
 
 .footer-tagline {

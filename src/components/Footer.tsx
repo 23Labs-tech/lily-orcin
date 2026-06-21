@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FACEBOOK_URL, INSTAGRAM_URL } from "@/lib/constants";
+import { FACEBOOK_URL, INSTAGRAM_URL, LOGO_FOOTER } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="footer-brand">
           <Link href="/" className="footer-logo">
             <Image
-              src="/LTLW_-_Clear_black.svg"
+              src={LOGO_FOOTER}
               alt="Lily Olsen Counselling"
               className="footer-logo-img"
-              width={150}
-              height={40}
+              width={160}
+              height={110}
             />
           </Link>
           <p className="footer-tagline">

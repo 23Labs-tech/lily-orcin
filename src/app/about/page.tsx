@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import SiteShell from "@/components/SiteShell";
-import { PLACEHOLDER_IMG } from "@/lib/constants";
+import { LILY_HERO_IMG, PLACEHOLDER_IMG } from "@/lib/constants";
 import "./about.css";
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default function AboutPage() {
             </div>
           </FadeUp>
           <FadeUp className="page-hero-image" style={{ transitionDelay: "0.15s" }}>
-            <Image src={PLACEHOLDER_IMG} alt="Lily the Lightworker" width={600} height={580} unoptimized />
+            <Image src={LILY_HERO_IMG} alt="Lily the Lightworker" width={600} height={580} priority />
           </FadeUp>
         </div>
       </section>

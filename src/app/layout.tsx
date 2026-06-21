@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   },
   description:
     "Lily The Lightworker offers professional therapy and personal growth support, helping clients navigate life's challenges with clarity, confidence, and emotional wellbeing.",
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { LOGO_HEADER } from "@/lib/constants";
 
 type NavProps = {
   active?: "home" | "about" | "services" | "contact";
@@ -37,11 +38,11 @@ export default function Nav({ active }: NavProps) {
     <nav id="nav" className={scrolled ? "nav-scrolled" : ""}>
       <Link href="/" className="nav-logo">
         <Image
-          src="/LTLW_-_Clear_black.svg"
+          src={LOGO_HEADER}
           alt="Lily Olsen Counselling"
           className="nav-logo-img"
-          width={120}
-          height={32}
+          width={140}
+          height={72}
           priority
         />
       </Link>

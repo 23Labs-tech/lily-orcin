@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import SiteShell from "@/components/SiteShell";
-import { INSIGHT_TIMER_URL, PLACEHOLDER_IMG } from "@/lib/constants";
+import {
+  INSIGHT_TIMER_URL,
+  LILY_APPROACH_IMG,
+  LILY_HERO_IMG,
+  LILY_MEET_IMG,
+  PLACEHOLDER_IMG,
+} from "@/lib/constants";
 import "./home.css";
 
 const testimonials = [
@@ -65,7 +71,7 @@ export default function HomePage() {
             </div>
           </FadeUp>
           <FadeUp className="hero-image-wrap" style={{ transitionDelay: "0.15s" }}>
-            <Image src={PLACEHOLDER_IMG} alt="Lily the Lightworker" width={600} height={600} unoptimized />
+            <Image src={LILY_HERO_IMG} alt="Lily the Lightworker" width={600} height={600} priority />
             <div className="hero-ornament">
               <div className="num">10+</div>
               <div className="label">Years Experience</div>
@@ -77,7 +83,7 @@ export default function HomePage() {
       <section className="meet" id="about">
         <div className="meet-inner section-inner">
           <FadeUp className="meet-image">
-            <Image src={PLACEHOLDER_IMG} alt="Lily" width={600} height={580} unoptimized />
+            <Image src={LILY_MEET_IMG} alt="Lily" width={600} height={580} />
           </FadeUp>
           <FadeUp className="meet-content" style={{ transitionDelay: "0.1s" }}>
             <span className="section-label">About</span>
@@ -147,7 +153,7 @@ export default function HomePage() {
             </Link>
           </FadeUp>
           <FadeUp className="approach-image" style={{ transitionDelay: "0.1s" }}>
-            <Image src={PLACEHOLDER_IMG} alt="Lily's approach" width={600} height={520} unoptimized />
+            <Image src={LILY_APPROACH_IMG} alt="Lily's approach" width={600} height={520} />
           </FadeUp>
         </div>
       </section>
