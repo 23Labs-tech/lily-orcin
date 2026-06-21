@@ -14,11 +14,11 @@ export const ABOUT_APPROACH_IMG = "/approach.jpeg";
 export const ABOUT_SUPPORT_IMG = "/support.jpeg";
 
 export const SPECIALITY_IMGS = [
-  "/My%20Specialities-1.jpeg",
-  "/My%20Specialities-2.jpeg",
-  "/My%20Specialities-3.jpeg",
   "/My%20Specialities-4.jpeg",
+  "/My%20Specialities-3.jpeg",
+  "/My%20Specialities-1.jpeg",
   "/My%20Specialities-5.jpeg",
+  "/My%20Specialities-2.jpeg",
   "/My%20Specialities-6.jpeg",
 ];
 
