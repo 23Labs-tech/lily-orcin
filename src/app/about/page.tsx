@@ -3,7 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import SiteShell from "@/components/SiteShell";
-import { LILY_HERO_IMG, PLACEHOLDER_IMG } from "@/lib/constants";
+import {
+  LILY_HERO_IMG,
+  ABOUT_APPROACH_IMG,
+  ABOUT_SUPPORT_IMG,
+  SPECIALITY_IMGS,
+} from "@/lib/constants";
 import "./about.css";
 
 export const metadata: Metadata = {
@@ -17,11 +22,13 @@ const pillars = [
     title: "My Approach",
     desc: "My approach is holistic, evidence-based and trauma-informed. I aim to provide a safe and nurturing space for us to navigate your inner world, uncovering limiting beliefs, patterns, and emotions. I believe that every individual has the capacity to evolve, and my role is to facilitate that process by offering guidance and tools tailored to you.",
     alt: "My Approach",
+    img: ABOUT_APPROACH_IMG,
   },
   {
     title: "How I Support You",
     desc: "With over a decade of experience across NGOs, schools, the public sector, corporate settings, and EAP services, I bring a well-rounded perspective to mental health and wellbeing. My role is to be a compassionate guide, helping you navigate challenges while uncovering your inner strength, authenticity, and resilience.",
     alt: "How I Support You",
+    img: ABOUT_SUPPORT_IMG,
   },
 ];
 
@@ -111,7 +118,7 @@ export default function AboutPage() {
             {pillars.map((pillar, index) => (
               <FadeUp key={pillar.title} className="pillar-card" style={{ transitionDelay: `${index * 0.1}s` }}>
                 <div className="pillar-icon">
-                  <Image src={PLACEHOLDER_IMG} alt={pillar.alt} width={80} height={80} unoptimized />
+                  <Image src={pillar.img} alt={pillar.alt} width={80} height={80} />
                 </div>
                 <div className="pillar-body">
                   <h3 className="pillar-title">{pillar.title}</h3>
@@ -137,7 +144,7 @@ export default function AboutPage() {
               <FadeUp key={spec.num} className="spec-card" style={{ transitionDelay: `${(index % 3) * 0.08}s` }}>
                 <span className="spec-num">{spec.num}</span>
                 <div className="spec-img-wrap">
-                  <Image src={PLACEHOLDER_IMG} alt={spec.alt} width={64} height={64} unoptimized />
+                  <Image src={SPECIALITY_IMGS[index]} alt={spec.alt} width={64} height={64} />
                 </div>
                 <h3 className="spec-title">{spec.title}</h3>
                 <p className="spec-desc">{spec.desc}</p>

@@ -10,6 +10,18 @@ export const LILY_MEET_IMG = "/lily-1.jpeg";
 export const LILY_APPROACH_IMG = "/lily-3.jpeg";
 export const CONTACT_SUPPORT_IMG = "/contact-support-therapy.png";
 
+export const ABOUT_APPROACH_IMG = "/approach.jpeg";
+export const ABOUT_SUPPORT_IMG = "/support.jpeg";
+
+export const SPECIALITY_IMGS = [
+  "/My%20Specialities-1.jpeg",
+  "/My%20Specialities-2.jpeg",
+  "/My%20Specialities-3.jpeg",
+  "/My%20Specialities-4.jpeg",
+  "/My%20Specialities-5.jpeg",
+  "/My%20Specialities-6.jpeg",
+];
+
 export const PLACEHOLDER_IMG =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23EDF0EB'/%3E%3Crect x='1' y='1' width='398' height='298' fill='none' stroke='%23C8D3C4' stroke-width='2' stroke-dasharray='6,6'/%3E%3Cg transform='translate(200,150)'%3E%3Crect x='-40' y='-30' width='80' height='60' rx='4' fill='none' stroke='%239A9690' stroke-width='2.5'/%3E%3Ccircle cx='-22' cy='-13' r='6' fill='none' stroke='%239A9690' stroke-width='2.5'/%3E%3Cpath d='M-40 18 L-12 -6 L8 12 L22 0 L40 18' fill='none' stroke='%239A9690' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E";
 
