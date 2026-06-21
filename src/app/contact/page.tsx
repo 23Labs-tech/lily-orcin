@@ -4,7 +4,7 @@ import FadeUp from "@/components/FadeUp";
 import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import SiteShell from "@/components/SiteShell";
-import { FACEBOOK_URL, INSIGHT_TIMER_URL, INSTAGRAM_URL, PLACEHOLDER_IMG } from "@/lib/constants";
+import { CONTACT_SUPPORT_IMG, FACEBOOK_URL, INSIGHT_TIMER_URL, INSTAGRAM_URL } from "@/lib/constants";
 import "./contact.css";
 
 export const metadata: Metadata = {
@@ -26,14 +26,15 @@ export default function ContactPage() {
               or need <span className="em-word">support?</span>
             </h1>
             <div className="divider" />
-            <Image
-              src={PLACEHOLDER_IMG}
-              alt="Lily Olsen"
-              className="contact-photo"
-              width={600}
-              height={340}
-              unoptimized
-            />
+            <div className="contact-photo-wrap">
+              <Image
+                src={CONTACT_SUPPORT_IMG}
+                alt="A calm therapy room with a cream armchair, journal, and sage-toned decor"
+                className="contact-photo"
+                width={600}
+                height={340}
+              />
+            </div>
             <p className="contact-intro">
               Whether you&apos;re ready to begin therapy or simply want to ask a question first,
               I&apos;d love to hear from you. There&apos;s no pressure — just reach out and we&apos;ll go from
