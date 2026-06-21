@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 type FadeUpProps = {
   children: ReactNode;
@@ -10,6 +10,7 @@ type FadeUpProps = {
 
 export default function FadeUp({ children, className = "", style }: FadeUpProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -19,7 +20,8 @@ export default function FadeUp({ children, className = "", style }: FadeUpProps)
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            setVisible(true);
+            observer.disconnect();
           }
         });
       },
@@ -31,7 +33,11 @@ export default function FadeUp({ children, className = "", style }: FadeUpProps)
   }, []);
 
   return (
-    <div ref={ref} className={`fade-up ${className}`.trim()} style={style}>
+    <div
+      ref={ref}
+      className={`fade-up ${visible ? "visible " : ""}${className}`.trim()}
+      style={style}
+    >
       {children}
     </div>
   );
