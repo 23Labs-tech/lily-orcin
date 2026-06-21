@@ -7,7 +7,10 @@ import {
   LILY_APPROACH_IMG,
   LILY_HERO_IMG,
   LILY_MEET_IMG,
-  PLACEHOLDER_IMG,
+  TOGETHER_INDIVIDUAL_IMG,
+  TOGETHER_COUPLES_IMG,
+  TOGETHER_FACILITATION_IMG,
+  TOGETHER_CONTENT_IMG,
 } from "@/lib/constants";
 import "./home.css";
 
@@ -24,21 +27,25 @@ const homeServices = [
     title: "Individual Therapy",
     desc: "Using personalised therapeutic approaches, our therapy sessions meet you where you are on your journey to wellbeing.",
     alt: "Individual Therapy",
+    img: TOGETHER_INDIVIDUAL_IMG,
   },
   {
     title: "Couples Therapy",
     desc: "With compassion and care, our couples therapy sessions are thoughtfully tailored to meet you both where you are, creating a safe space to heal, reconnect, and build a deeper, more loving relationship together.",
     alt: "Couples Therapy",
+    img: TOGETHER_COUPLES_IMG,
   },
   {
     title: "Facilitation",
     desc: "Workshops and webinars are an engaging way to empower participants through psychoeducation towards their personal and professional growth.",
     alt: "Facilitation",
+    img: TOGETHER_FACILITATION_IMG,
   },
   {
     title: "Wellbeing Content Writing",
     desc: "Evidence-based wellbeing content for organisations that support emotional health, resilience, and psychological safety — blending clinical insight with practical, accessible guidance.",
     alt: "Wellbeing Content Writing",
+    img: TOGETHER_CONTENT_IMG,
     link: INSIGHT_TIMER_URL,
   },
 ];
@@ -120,7 +127,7 @@ export default function HomePage() {
           <div className="services-grid">
             {homeServices.map((service, index) => (
               <FadeUp key={service.title} className="service-card" style={{ transitionDelay: `${index * 0.05}s` }}>
-                <Image className="service-img" src={PLACEHOLDER_IMG} alt={service.alt} width={90} height={90} unoptimized />
+                <Image className="service-img" src={service.img} alt={service.alt} width={90} height={90} />
                 <div className="service-body">
                   <h3 className="service-title">{service.title}</h3>
                   <p className="service-desc">{service.desc}</p>

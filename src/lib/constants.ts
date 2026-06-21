@@ -13,6 +13,11 @@ export const CONTACT_SUPPORT_IMG = "/contact-support-therapy.png";
 export const ABOUT_APPROACH_IMG = "/approach.jpeg";
 export const ABOUT_SUPPORT_IMG = "/support.jpeg";
 
+export const TOGETHER_INDIVIDUAL_IMG = "/Together-3.jpeg";
+export const TOGETHER_COUPLES_IMG = "/Together-2.jpeg";
+export const TOGETHER_FACILITATION_IMG = "/Together-4.jpeg";
+export const TOGETHER_CONTENT_IMG = "/Together-1.jpeg";
+
 export const SPECIALITY_IMGS = [
   "/My%20Specialities-4.jpeg",
   "/My%20Specialities-3.jpeg",
