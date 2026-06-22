@@ -160,7 +160,7 @@ export default function HomePage() {
             </Link>
           </FadeUp>
           <FadeUp className="approach-image" style={{ transitionDelay: "0.1s" }}>
-            <Image src={LILY_APPROACH_IMG} alt="Lily's approach" width={600} height={520} />
+            <Image src={LILY_APPROACH_IMG} alt="Lily's approach" width={732} height={755} quality={90} />
           </FadeUp>
         </div>
       </section>
