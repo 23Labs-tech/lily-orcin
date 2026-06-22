@@ -148,6 +148,11 @@
   object-fit: cover;
 }
 
+.pillar-body {
+  min-width: 0;
+  flex: 1;
+}
+
 .pillar-title {
   font-family: var(--font-sans);
   font-size: 1.16rem;
@@ -246,6 +251,17 @@
   .pillars-grid,
   .spec-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pillar-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 36px 32px;
+  }
+
+  .pillar-icon {
+    width: 64px;
+    height: 64px;
   }
 }
 
