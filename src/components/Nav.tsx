@@ -41,8 +41,8 @@ export default function Nav({ active }: NavProps) {
           src={LOGO_HEADER}
           alt="Lily Olsen Counselling"
           className="nav-logo-img"
-          width={140}
-          height={72}
+          width={95}
+          height={82}
           priority
         />
       </Link>

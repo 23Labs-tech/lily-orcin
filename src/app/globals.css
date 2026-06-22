@@ -84,7 +84,7 @@ nav.nav-scrolled {
 }
 
 nav.nav-scrolled .nav-logo-img {
-  height: 58px;
+  height: 66px;
 }
 
 .nav-logo {
@@ -99,8 +99,8 @@ nav.nav-scrolled .nav-logo-img {
 .nav-logo-img {
   display: block;
   width: auto;
-  height: 72px;
-  max-width: 140px;
+  height: 82px;
+  max-width: 160px;
   object-fit: contain;
 }
 

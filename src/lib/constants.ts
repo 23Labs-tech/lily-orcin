@@ -1,5 +1,5 @@
-export const LOGO_HEADER = "/logo.jpeg";
-export const LOGO_FOOTER = "/logo_1.jpeg";
+export const LOGO_HEADER = "/lily-olsen-logo.png";
+export const LOGO_FOOTER = "/lily-olsen-logo.png";
 
 export const SERVICE_INDIVIDUAL_IMG = "/service-1.jpeg";
 export const SERVICE_COUPLES_IMG = "/service-2.jpeg";

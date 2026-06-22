@@ -12,7 +12,7 @@ export default function Footer() {
               src={LOGO_FOOTER}
               alt="Lily Olsen Counselling"
               className="footer-logo-img"
-              width={160}
+              width={127}
               height={110}
             />
           </Link>
